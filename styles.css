@@ -1,0 +1,33 @@
+/* Segmentos */
+body {
+    color: white;
+    font-size: 25px;
+    background-color:#9de180;
+}
+
+header {
+    background-color:#4b74bc;
+    display:flex;
+    justify-content:center;
+}
+
+.container {
+    margin: 10px;
+    padding: 20px;
+    min-height: 500px;
+}
+
+/* Etiquetas específicas */
+nav li {
+    display:inline-block;   
+    margin:30px;
+}
+
+li a {
+    display:flex;
+    text-decoration-line: none;
+}
+
+h1 {
+    -webkit-text-stroke: 0.5px black;
+}
