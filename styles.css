@@ -50,13 +50,7 @@ main h2 {
 
 /* Recomendaciones */
   
-.categorias {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-}
-  
+
 .linea {
     position: absolute;
     background-color: #666;
@@ -68,18 +62,6 @@ main h2 {
     bottom: 0;
     margin: auto;
     transform: translateX(50%);
-}
-  
-.categorias article {
-    display: flex;
-    margin: 20px;
-    flex: 1;
-    align-items: center;
-}
-
-.izq {
-    display:flex;
-    justify-content:flex-end;
 }
 
 .categorias figure img {
@@ -93,6 +75,25 @@ main h2 {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+  
+.categorias article {
+    display: flex;
+    margin: 20px;
+    flex: 1;
+    align-items: center;
+}
+
+.izq {
+    display:flex;
+    justify-content:flex-end;
 }
 
 /* Categorías de recomendaciones */
