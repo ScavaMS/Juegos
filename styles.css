@@ -98,19 +98,20 @@ main h2 {
 /* Categorías de recomendaciones */
 
 .categorias_r img {
-    margin: 10px;
-    width: 150px
+    width: 170px;
+    margin: 0px;
 }
 
 .categorias_r {
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 10px;
+    white-space: nowrap;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
-
 
 @media (max-width: 750px) {
 
@@ -134,5 +135,28 @@ main h2 {
 
     body {
         font-size: 15px;
+    }
+
+    .categorias_r img {
+        width: 70px
+    }
+    
+    .categorias_r {
+        font-size: 10px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .categorias_r figure {
+        margin:5px;
+    }
+
+    .container_r {
+        display: flex;
+        justify-content: center;
     }
 }
