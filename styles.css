@@ -1,7 +1,7 @@
 /* Segmentos */
 body {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     background-color:#9de180;
     margin:0;
 }
@@ -46,8 +46,6 @@ main h1 {
 main h2 {
     font-size:20px;
 }
-
-
 
 
 /* Recomendaciones */
@@ -97,6 +95,21 @@ main h2 {
     font-size: 20px;
 }
 
+/* Categorías de recomendaciones */
+
+.categorias_r img {
+    margin: 10px;
+    width: 150px
+}
+
+.categorias_r {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
 
 
 @media (max-width: 750px) {
