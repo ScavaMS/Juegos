@@ -113,6 +113,26 @@ main h2 {
     text-align: center;
 }
 
+main h1 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Plataformas */
+
+.plataformas img {
+    width: 200px;
+    margin: 5px;
+}
+
+.plataformas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 750px) {
 
 
@@ -141,7 +161,7 @@ main h2 {
         width: 70px
     }
     
-    .categorias_r {
+    .categorias_r, .plataformas {
         font-size: 10px;
         display: inline-flex;
         flex-wrap: nowrap;
@@ -155,7 +175,7 @@ main h2 {
         margin:5px;
     }
 
-    .container_r {
+    .container_r, .container_p {
         display: flex;
         justify-content: center;
     }
