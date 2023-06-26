@@ -4,6 +4,7 @@ body {
     font-size: 20px;
     background-color:#9de180;
     margin:0;
+    text-align: center;
 }
 
 header {
@@ -15,7 +16,12 @@ header {
 
 .container {
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.inicio img {
+    width:500px;
 }
 
 /* Etiquetas específicas */
@@ -45,6 +51,10 @@ main h1 {
 
 main h2 {
     font-size:20px;
+}
+
+footer {
+    display: none;
 }
 
 
@@ -139,7 +149,7 @@ main h1 {
 /* Plataformas */
 
 .plataformas img {
-    width: 200px;
+    width: 150px;
     margin: 5px;
 }
 
@@ -147,24 +157,67 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px;
+}
+
+/* Tiendas de computadora */
+
+.img-tiendas img {
+    width: 200px;
+    margin: 30px;
+}
+
+.img-tiendas, .botones {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
 
 
 @media (max-width: 750px) {
 
+    footer {
+        background-color:#526f46;
+        display:flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    #linea-horizontal {
+        display: flex;
+        align-items: flex-end;
+        margin: 70px 0 40px 0;
+        height: 2px;
+        background-color: #3c453c; /* Cambia el color de fondo según tus preferencias */
+        border: none;
+    }
+
+    #creditos_m {
+        display:none;
+    }
+
+    nav li {
+        display:inline-block;   
+        margin: 0 10px 0 10px;
+    }
+
+    .inicio img {
+        width:200px;
+    }
 
     .categorias figure img {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     .categorias figure {
-        margin:5px;
+        margin: 0px;
     }
 
     .categorias article {
-        margin: 5px;
+        margin: 0px;
     }
 
     .categorias p {
@@ -193,7 +246,7 @@ main h1 {
         margin:5px;
     }
 
-    .container_r, .container_p {
+    .container_r, .plataformas {
         display: flex;
         justify-content: center;
     }
