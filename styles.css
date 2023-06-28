@@ -1,31 +1,41 @@
-/* Segmentos */
+/* GENERAL */
 body {
-    color: white;
-    font-size: 20px;
     background-image: linear-gradient(to right bottom, #91baf7, #4cadd9, #009cb0, #008880, #287252);
+    font-size: 20px;
     margin:0;
     text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
-header {
-    background-color:#4b74bc;
-    opacity: 70%;
-    display: flex;
-    justify-content: center;
-    width: fill;
+footer, #linea-horizontal {
+    display: none;
 }
 
-.container, .container_rs {
+main {
     margin: 10px;
     padding: 10px;
     text-align: center;
 }
 
-.inicio img {
-    width: 500px;
+footer, #linea-horizontal {
+    display: none;
 }
 
-/* Etiquetas específicas */
+/*  height: 100vh;
+    width: 100%; */
+
+
+
+/* HEADER */
+header {
+    background-color:#4b74bc;
+    opacity: 70%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 nav li {
     display:inline-block;   
     margin: 0 30px 10px 30px;
@@ -38,19 +48,7 @@ header li a, h1 a {
 
 nav ul {
     margin: 0px;
-}
-
-.creditos {
-    text-align: start;
-}
-
-.creditos, .container_p {
-    height: 100vh;
-    width: 100%;
-}
-
-.creditos article {
-    margin: 15px 0 0 0;
+    padding: 0px;
 }
 
 nav h1 a {
@@ -63,29 +61,57 @@ nav h1 {
     margin:5px;
 }
 
+
+
+/* TEXTOS */
 main h1 {
     -webkit-text-stroke: 0.5px black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 main h2 {
     font-size:20px;
 }
 
-footer {
-    display: none;
+.creditos {
+    text-align: start;
 }
 
 
-/* Recomendaciones */
 
-.categorias {
-    position: relative;
+/* IMÁGENES */
+.inicio img {
+    width: 500px;
 }
 
 .categorias figure img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+}
+
+.filas img {
+    width: 150px;
+    margin: 0px;
+}
+
+.plataformas img {
+    width: 150px;
+    margin: 5px;
+}
+
+.tiendas img {
+    width: 200px;
+    margin: 30px;
+}
+
+
+
+/* RECOMENDACIONES */
+.categorias {
+    position: relative;
 }
 
 .categorias p {
@@ -138,15 +164,7 @@ footer {
     justify-content: flex-end;
 }
 
-
-/* Categorías de recomendaciones */
-
-.categorias_r img {
-    width: 170px;
-    margin: 0px;
-}
-
-.categorias_r {
+.filas {
     font-size: 15px;
     display: flex;
     flex-direction: row;
@@ -157,32 +175,14 @@ footer {
     text-align: center;
 }
 
-main h1 {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-}
 
 
-/* Plataformas */
-
-.plataformas img {
-    width: 150px;
-    margin: 5px;
-}
-
+/* PLATAFORMAS */
 .plataformas {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px;
-}
-
-/* Tiendas de computadora */
-
-.img-tiendas img {
-    width: 200px;
-    margin: 30px;
 }
 
 .img-tiendas, .botones {
@@ -192,32 +192,40 @@ main h1 {
 }
 
 
-
+/* MEDIA QUERIES */
 @media (max-width: 750px) {
 
+    body {
+        font-size: 15px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
     footer {
-        background-color:#526f46;
-        display:flex;
+        background-color:#4b74bc;
+        opacity: 70%;
+        padding: 20px;
+        display: block;
         justify-content: center;
         align-items: flex-end;
         height: 100%;
     }
 
-    .container {
-        height: 100vh;
-    }
-
     #linea-horizontal {
         display: flex;
         align-items: flex-end;
-        margin: 70px 0 40px 0;
+        margin: 70px 0 0 0;
+        padding: 0 0 70px 0;
         height: 2px;
-        background-color: #3c453c; /* Cambia el color de fondo según tus preferencias */
+        background-color:#4b74bc;
+        opacity: 70%;
         border: none;
     }
 
-    #creditos_m {
-        display:none;
+
+    /* header */
+    #creditos_nav {
+        display: none;
     }
 
     nav li {
@@ -225,15 +233,8 @@ main h1 {
         margin: 0 10px 0 10px;
     }
 
-    .inicio img {
-        width:200px;
-    }
 
-    .categorias figure img {
-        width: 35px;
-        height: 35px;
-    }
-
+    /* textos */
     .categorias figure {
         margin: 0px;
     }
@@ -246,15 +247,23 @@ main h1 {
         font-size: 10px;
     }
 
-    body {
-        font-size: 15px;
+
+    /* imágenes */
+    .inicio img {
+        width:200px;
+    }
+
+    .categorias figure img {
+        width: 35px;
+        height: 35px;
     }
 
     .categorias_r img {
         width: 70px
     }
-    
-    .categorias_r, .plataformas {
+
+    /* otros */
+    .filas, .plataformas {
         font-size: 10px;
         display: inline-flex;
         flex-wrap: nowrap;
@@ -264,21 +273,32 @@ main h1 {
         text-align: center;
     }
 
-    .categorias_r figure {
+    .filas figure {
         margin:5px;
     }
 
-    .container_r, .plataformas {
+    .filas, .plataformas {
         display: flex;
         justify-content: center;
     }
 
-    .espacio-izquierda,
-    .espacio-derecha {
+    .esp-izq,
+    .esp-der {
       flex-basis: 100%;
     }
 
     .categorias figure {
         margin: 10px;
     }
+
+    .container_creditos {
+        display: none;
+    }
+
+    .creditos-display {
+        display: contents;
+    }
+
 }
+
+
