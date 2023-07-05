@@ -202,7 +202,11 @@ main h1 {
     margin: 20px;
 }
 
-
+#boton_creditos {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+}
 /* MEDIA QUERIES */
 @media (max-width: 750px) {
 
