@@ -1,3 +1,20 @@
+.registro input {
+    display:block;
+    margin:10px;
+}
+
+.preferencias-visibles input {
+    display:inline;
+}
+
+.registro, .preferencias-visible {
+    display:flex;
+    visibility:visible !important;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
 /* GENERAL */
 body {
     background-image: linear-gradient(to right bottom, #91baf7, #4cadd9, #009cb0, #008880, #287252);

@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recomendaciones</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <h1 id="inicio_nav"><a href="index.html">Inicio</a></h1>
+            <h1><a href="../index.html">Inicio</a></h1>
             <ul>
-                <li><a href="./s/recomendaciones.html">Recomendaciones</a></li>
-                <li><a href="./s/plataformas.html">Plataformas</a></li>
-                <li id="creditos_nav"><a href="./s/creditos.html">Créditos</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="plataformas.html">Plataformas</a></li>
+                <li id="creditos_nav"><a href="creditos.html">Créditos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="container_inicio">
-            
-            <section class="inicio">
-                <h1>¡Bienvenido/Bienvenida a la página de recomendaciones y descubrimiento de juegos!</h1>
-                <p>En esta página encontrarás una biblioteca de juegos recomendados a base de lo que estés buscando. Si quieres dar una sugerencia de juego para poner en cierta categoría, puedes dar una sugerencia aquí: <a href="s/sugerencias.html">sugerencias</a></p>
-                <p>También se tiene en cuenta a gente que no tiene experiencia en el mundo de los juegos, puedes ir a "Recomendaciones" y encontrar una lista hecha para empezar.</p>
+        <div class="container_plataformas">
+            <h1>¡Puedes sugerir cualquier categoría!</h1>
+            <section>
+                <form class="registro">
+                    <fieldset>
+                    <label>
+                        <input required id="nombre" type="text" name="registro" placeholder="nombre">
+                        <input required id="email" type="email" name="registro" placeholder="email">
+                        <input required id="contraseña" type="password" name="registro" placeholder="contraseña">
+                        <input required id="contraseña" type="password" name="registro" placeholder="contraseña nuevamente">
+                        <button required name="registro" id="submit-registro" type="submit">Enviar</button>
+                    </label>
+                    </fieldset>
+                </form>
             </section>
-
-            <section class="inicio_r">
-              <img id="telefono" src="img/college.webp">
-              <img id="pc" src="img/college.jpg">
-            </section>
-
         </div>
     </main>
 
@@ -71,6 +73,7 @@
                 </section>
           </div>
     </footer>
-    <script src="creditos.js"></script>
+    <script src="../creditos.js"></script>
 </body>
+
 </html>
